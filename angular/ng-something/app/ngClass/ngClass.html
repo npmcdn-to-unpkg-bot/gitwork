@@ -1,0 +1,19 @@
+<style>
+    .padding5{
+        padding: 15px;
+        border: 1px dotted blue;
+    }
+    .boldText{
+        font-weight:bold;
+    }
+    .redFill{
+        color:red;
+    }
+</style>
+
+<p ng-class="{padding5: padding, boldText:bold, redFill:red}">
+    Map Syntax Example
+</p>
+<input type="checkbox" ng-model="padding"/>Padding <br/>
+<input type="checkbox" ng-model="bold"/>Bold <br/>
+<input type="checkbox" ng-model="red"/>RED Color <br/>

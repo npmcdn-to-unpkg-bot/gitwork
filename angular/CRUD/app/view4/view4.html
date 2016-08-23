@@ -1,0 +1,33 @@
+<table border="1">
+    <tr>
+        <td>name</td>
+        <td>phone</td>
+        <td>addr</td>
+        <td>update</td>
+        <td>delete</td>
+    </tr>
+    <tr ng-repeat="story in main.stories">
+        <td>{{story.name}}</td>
+        <td>{{story.phone}}</td>
+        <td>{{story.addr}}</td>
+        <td><input type="button" ng-click="main.beforeupdate(story.id)" value="update"/></td>
+        <td><input type="button" ng-click="main.delete(story.id)" value="delete"/></td>
+    </tr>
+</table>
+
+<p>insert</p>
+<table>
+    <tr>
+        <td>name</td><td><input type="text" ng-model="new_name"/></td>
+    </tr>
+    <tr>
+        <td>phone</td><td><input type="text" ng-model="new_phone"/></td>
+    </tr>
+    <tr>
+        <td>addr</td><td><input type="text" ng-model="new_addr"/></td>
+    </tr>
+</table>
+<div>
+    <input type="button" value="update" ng-click="main.update(update_id)"/>
+    <input type="button" value="insert" ng-click="main.insert()"/>
+</div>

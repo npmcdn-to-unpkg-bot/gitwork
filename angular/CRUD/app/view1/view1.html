@@ -1,0 +1,33 @@
+<div>
+ <table border="1" width="100%">
+     <tr>
+         <td ng-click="orderByMe('id')" >id</td>
+         <td ng-click="orderByMe('name')">name</td>
+         <td ng-click="orderByMe('years')">years</td>
+     </tr>
+     <tr ng-repeat="member in members | orderBy:myOrderBy">
+         <td>{{member.id}}</td>
+         <td>{{member.name}}</td>
+         <td>{{member.years}}</td>
+     </tr>
+ </table>
+
+    keyword<input type="text" ng-model="keyword"/>
+    subkeyword<input type="text" ng-model="subkeyword"/>
+    <table border="1">
+        <tr>
+            <td>name</td>
+        </tr>
+        <tr ng-repeat="str in content|filter:keyword|filter:subkeyword">
+            <td>{{str}}</td>
+        </tr>
+    </table>
+
+    <select ng-model="type" ng-change="changeSearch(type)">
+        <option value="id">id</option>
+        <option value="name">name</option>
+        <option value="years">years</option>
+    </select>
+    <input type="text" ng-model="search[type]"/>
+    {{search}}
+</div>

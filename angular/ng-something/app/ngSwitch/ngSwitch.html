@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    select your grade
+</div>
+<div>
+    Check Your Grade:
+    <select ng-model="grade">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+    <p>{{grade}}</p>
+    <div ng-switch on ='grade'>
+        <p ng-switch-when="A">Good Job</p>
+        <p ng-switch-when="B">Good</p>
+        <p ng-switch-when="C">So so...</p>
+        <p ng-switch-when="D">Well</p>
+        <p ng-switch-when="E">Nothing to Say....</p>
+    </div>
+</div>
+</body>
+</html>
