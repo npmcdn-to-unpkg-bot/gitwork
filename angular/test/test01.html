@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="test01.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl as main">
+	<div ng-repeat="story in main.stories">
+		<h4>{{story.title}}</h4>
+		<p>{{story.description}}</p>
+	</div>	
+
+<div ng-app="myApp" ng-controller="hexaoutput">
+	<h1>{{hex}}</h1>
+
+</div>
+</body>
+</html> 

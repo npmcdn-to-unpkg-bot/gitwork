@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app='helloApp'>
+	<div ng-controller='HelloController'>
+		<p>Hello {{name}}</p>
+		<p>Hello <h2 ng-bind='name'></h2></p>
+	</div>
+	<script>
+		var hello = angular.module('helloApp',[]);
+		hello.controller('HelloController', function($scope){
+			$scope.name="World";
+		});
+	</script>
+</body>
+</html>

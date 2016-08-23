@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+</head>
+<body ng-app="myApp">
+<div>
+	<p><a href="#/">Main</a></p>
+	<a href="#menu1">menu1</a>
+	<a href="#menu2">menu2</a>
+	<a href="#menu3">menu3</a>
+</div>
+<hr>
+
+<div ng-view></div>
+<script>
+	var app = angular.module('myApp',['ngRoute']);
+
+app.config(function($routeProvider){
+	$routeProvider
+	.when('/menu1', {templateUrl: 'pages/menu1.html'})
+	.when('/menu2', {templateUrl: 'pages/menu2.html'})
+	.when('/menu3', {templateUrl: 'pages/menu3.html'})
+	.otherwise({redirectTo: '/menu1'});
+});
+</script>
+</body>
+</html>
