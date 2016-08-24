@@ -1,0 +1,14 @@
+{
+  "name": "study-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "ejs": "^2.4.1",
+    "body-parser": "^1.14.2",
+    "express-session": "^1.13.0"
+  }
+}
