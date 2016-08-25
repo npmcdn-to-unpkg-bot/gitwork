@@ -1,0 +1,13 @@
+<input type="text" ng-model="search.$"/>
+<table border="1px solid black">
+    <tr>
+        <th ng-click='criteria="id"'>id</th>
+        <th ng-click='criteria="name"'>name</th>
+        <th ng-click='criteria="years"'>years</th>
+    </tr>
+    <tr ng-repeat='member in members|filter:search|orderBy:criteria'>
+        <td>{{member.id}}</td>
+        <td>{{member.name}}</td>
+        <td>{{member.years}}</td>
+    </tr>
+</table>

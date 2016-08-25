@@ -1,0 +1,4 @@
+<p>{{content}}</p>
+filtering <input type="text" ng-model="keyword"/>
+
+<p ng-repeat="str in content|filter:keyword">{{str}}</p>
