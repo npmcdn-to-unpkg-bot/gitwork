@@ -4,6 +4,10 @@ var app = express();
 var bodyParser = require('body-parser');
 // express-session : 세션 관리
 var session = require('express-session');
+// mongoose 
+var mongoose = require('mongoose');
+
+
 var fs = require("fs");
 
 app.set('views', __dirname + '/views');
