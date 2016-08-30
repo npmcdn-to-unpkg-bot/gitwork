@@ -10,7 +10,7 @@ var connection = require('express-myconnection');
 var mysql = require('mysql');
 
 app.set('port', process.env.PORT || 4300);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.use(express.logger('dev'));
@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverried());
 
-app.use(express.static(path.join(__dirname, 'publid')));
+app.use(express.static('public'));
 
 if('development' == app.get('env')){
 	app.use(express.errorHandler());
