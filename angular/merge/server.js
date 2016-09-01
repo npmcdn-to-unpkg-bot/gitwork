@@ -36,7 +36,8 @@ app.use(session({
 }));
 
 // route 파일 설정
-var router = require('./router/main')(app, mysqlClient);
+var main = require('./router/main')(app, mysqlClient);
+var login = require('./router/login')(app, mysqlClient);
 
 app.listen(3000, function(){
 	console.log('listening on port 3000!');
