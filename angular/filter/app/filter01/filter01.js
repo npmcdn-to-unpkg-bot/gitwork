@@ -9,8 +9,9 @@ angular.module('myApp.filter01', ['ngRoute'])
 		});
 	}])
 
-	.controller('filter01Ctrl', function($scope) {
+	.controller('filter01Ctrl', function($scope,serviceTest) {
 		$scope.content = [
-			"HTML", "JavaScript", "Java", "Python", "C#", ".NET", "Objective-C", "Jython"
+			serviceTest.data1 , "JavaScript", "Java", "Python", "C#", ".NET", "Objective-C", "Jython"
 		];
+
 	});

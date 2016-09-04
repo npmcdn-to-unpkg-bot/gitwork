@@ -34,4 +34,12 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 		  templateUrl: 'view5/view5.html'
 	  })
 		.otherwise({redirectTo: '/view1'});
-	}]);
+	}]).
+	service('items', function(){
+		this.items = [];
+
+		this.pushItem = function(item){
+			this.push(items);
+		};
+
+	});

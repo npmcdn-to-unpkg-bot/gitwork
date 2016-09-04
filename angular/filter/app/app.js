@@ -15,4 +15,9 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/orderBy'});
-}]);
+}])
+
+.service('serviceTest', function(){
+	console.log('serviceTest!');
+	this.data1 = "HTML";
+});

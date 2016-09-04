@@ -2,7 +2,7 @@
 
 angular.module('myApp.view4', ['ngRoute'])
 
-.controller('View4Ctrl', function($scope, $location){
+.controller('View4Ctrl', function($scope, $location, items){
 	var main = this;
 	main.stories=[
 		{id: 1, name : "user01", phone:"0101", addr:"addr01"},
@@ -33,8 +33,14 @@ angular.module('myApp.view4', ['ngRoute'])
 			id: cnt,
 			name: $scope.new_name,
 			phone: $scope.new_phone,
-			addr: $scope.new_addr,
+			addr: $scope.new_addr
 		});
+		items.pushItem({
+			name: $scope.new_name,
+			phone: $scope.new_phone,
+			addr: $scope.new_addr
+		});
+
 		console.log(cnt);
 
 	};
@@ -49,7 +55,6 @@ angular.module('myApp.view4', ['ngRoute'])
 		main.stories[id-1].name = $scope.new_name;
 		main.stories[id-1].phone = $scope.new_phone;
 		main.stories[id-1].addr = $scope.new_addr;
-
 	};
 	main.beforeupdate = function(id){
 		$scope.update_id = id;
