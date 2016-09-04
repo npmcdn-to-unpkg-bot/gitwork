@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)http://webcache.googleusercontent.com/search?q=cache:http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/&gws_rd=cr&ei=G9jLV-DeGIf00gTwnJGIBA -->
+<html dir="ltr" lang="en-US" class="wf-robotoslab-n4-active wf-robotoslab-n3-active wf-pacifico-n4-active wf-active" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/">--><base href="."><link rel="stylesheet" href="./angular-imageSlider_files/css"><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style><script async="" src="./angular-imageSlider_files/fbevents.js"></script><script type="text/javascript" async="" src="./angular-imageSlider_files/ga.js"></script><script src="./angular-imageSlider_files/wp-emoji-release.min.js" type="text/javascript"></script></head><body class="no-sidebars full_page template-custom"><div id="google-cache-hdr" dir="ltr"><div>Google에 있는 <a href="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/" dir="ltr">http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/</a>의 저장된 페이지입니다. 2016년 9월 1일 16:47:00 GMT에 표시된 페이지의 스냅샷입니다. </div><div>그동안 <a href="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/" dir="ltr">현재 페이지</a>가 변경되었을 수 있습니다. <a href="http://support.google.com/websearch/bin/answer.py?hl=ko&amp;p=cached&amp;answer=1687222">자세히 알아보기</a></div><div></div><div><span style="display:inline-block !important;margin-top:8px !important;margin-right:104px !important;white-space:nowrap !important;"><span style="margin-right:28px !important;"><span style="font-weight:bold !important;">전체 버전</span></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/&amp;num=1&amp;strip=1&amp;vwsrc=0">텍스트 버전</a></span><span style="margin-right:28px !important;"><a href="http://webcache.googleusercontent.com/search?q=cache:http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/&amp;num=1&amp;strip=0&amp;vwsrc=1">소스 보기</a></span></span><span style="display:inline-block !important;margin-top:8px !important;color:#717171 !important;">도움말: 이 페이지에서 검색어를 빨리 찾으려면 <b>Ctrl+F</b> 또는 <b>⌘-F</b>(Mac)를 입력하여 검색 바를 사용하세요.</span></div></div><div style="position:relative;">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script async="" src="./angular-imageSlider_files/fbds.js"></script><script src="./angular-imageSlider_files/webfont.js"></script>
+<link rel="stylesheet" type="text/css" href="./angular-imageSlider_files/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./angular-imageSlider_files/css.css">
+<title>Build a Sweet Photo Slider with AngularJS Animate - One Hungry Mind</title>
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '933148050059146']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=933148050059146&amp;amp;ev=PixelInitialized" /&gt;</noscript>
+<link rel="alternate" type="application/rss+xml" title="One Hungry Mind feed" href="http://onehungrymind.com/feed/">
+<link rel="pingback" href="http://onehungrymind.com/xmlrpc.php">
+<script>
+WebFont.load({
+	google: { families: ['Roboto Slab:400,300', 'Pacifico'] },
+	timeout: 2000
+});
+</script>
+
+<!-- This site is optimized with the Yoast SEO plugin v3.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="One Hungry Mind » Build a Sweet Photo Slider with AngularJS Animate Comments Feed" href="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/onehungrymind.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="ye_dynamic-css" href="./angular-imageSlider_files/main.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mc4wp-form-basic-css" href="./angular-imageSlider_files/form-basic.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="enlighter-local-css" href="./angular-imageSlider_files/EnlighterJS.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./angular-imageSlider_files/jetpack.css" type="text/css" media="all">
+<!-- This site uses the Google Analytics by MonsterInsights plugin v5.5.2 - Universal disabled - https://www.monsterinsights.com/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-54365731-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+<script type="text/javascript" src="./angular-imageSlider_files/jquery.js"></script>
+<script type="text/javascript" src="./angular-imageSlider_files/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./angular-imageSlider_files/mootools-core-yc.js"></script>
+<script type="text/javascript" src="./angular-imageSlider_files/EnlighterJS.min.js"></script>
+<link rel="https://api.w.org/" href="http://onehungrymind.com/wp-json/">
+<link rel="alternate" type="application/json+oembed" href="http://onehungrymind.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fonehungrymind.com%2Fbuild-sweet-photo-slider-angularjs-animate%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://onehungrymind.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fonehungrymind.com%2Fbuild-sweet-photo-slider-angularjs-animate%2F&amp;format=xml">
+
+<link rel="dns-prefetch" href="http://i0.wp.com/">
+<link rel="dns-prefetch" href="http://i1.wp.com/">
+<link rel="dns-prefetch" href="http://i2.wp.com/">
+<style type="text/css">img#wpstats{display:none}</style><style type="text/css">/* MailChimp for WP - Checkbox Styles */
+.mc4wp-checkbox-wp-comment-form {
+  clear: both;
+  display: block;
+  position: static;
+  width: auto; }
+  .mc4wp-checkbox-wp-comment-form input {
+    float: none;
+    width: auto;
+    position: static;
+    margin: 0 6px 0 0;
+    padding: 0;
+    vertical-align: middle;
+    display: inline-block !important;
+    max-width: 21px;
+    -webkit-appearance: checkbox; }
+  .mc4wp-checkbox-wp-comment-form label {
+    float: none;
+    display: block;
+    cursor: pointer;
+    width: auto;
+    position: static;
+    margin: 0 0 16px 0; }
+</style><style type="text/css">/* MailChimp for WP - Checkbox Styles */
+.mc4wp-checkbox-wp-registration-form {
+  clear: both;
+  display: block;
+  position: static;
+  width: auto; }
+  .mc4wp-checkbox-wp-registration-form input {
+    float: none;
+    width: auto;
+    position: static;
+    margin: 0 6px 0 0;
+    padding: 0;
+    vertical-align: middle;
+    display: inline-block !important;
+    max-width: 21px;
+    -webkit-appearance: checkbox; }
+  .mc4wp-checkbox-wp-registration-form label {
+    float: none;
+    display: block;
+    cursor: pointer;
+    width: auto;
+    position: static;
+    margin: 0 0 16px 0; }
+</style><script type="text/javascript">/* <![CDATA[ */EnlighterJS_Config = {"selector":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"language":"js","theme":"beyond","indent":2,"hover":"hoverEnabled","showLinenumbers":true,"rawButton":true,"infoButton":false,"windowButton":true,"rawcodeDoubleclick":true,"grouping":true,"cryptex":{"enabled":false,"email":"mail@example.tld"}};window.addEvent('domready', function(){if (typeof EnlighterJS == "undefined"){return;};EnlighterJS.Util.Init(EnlighterJS_Config.selector.block, EnlighterJS_Config.selector.inline, EnlighterJS_Config);});;/* ]]> */</script><link rel="shortcut icon" href="http://onehungrymind.com/wp-content/uploads/2014/08/favicon2.ico">
+
+
+<div id="promo_bar" class="full_width">
+	<div class="promo">
+		Want more updates, tutorials, and awesomeness in general? Sign up! <script type="text/javascript">(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><!-- MailChimp for WordPress v4.0.3 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1119 mc4wp-form-basic" method="post" data-id="1119" data-name="Default sign-up form"><div class="mc4wp-form-fields"><p>
+	<label for="mc4wp_email">Email address: </label>
+	<input type="email" id="mc4wp_email" name="EMAIL" required="" placeholder="Your email address">
+</p>
+
+<p>
+	<input type="submit" value="Sign up">
+</p><div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></div><input type="hidden" name="_mc4wp_timestamp" value="1472747755"><input type="hidden" name="_mc4wp_form_id" value="1119"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin -->
+	</div>
+</div>
+<div id="header" class="full_width">
+	<div class="inner">
+		<div id="site_title"><a href="http://onehungrymind.com/"><img id="thesis_logo_image" src="./angular-imageSlider_files/ohm_logo.png" alt="One Hungry Mind" width="449" height="64" title="click to go home"></a>
+</div>
+		<div class="navigation">
+			<span class="menu_control">≡ Menu</span>
+<ul id="menu-main" class="menu menu-main"><li id="menu-item-375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="http://onehungrymind.com/about/">About</a></li>
+</ul>
+		</div>
+	</div>
+</div>
+<div id="content_box" class="full_width">
+	<div class="inner">
+		<div class="content">
+			<article id="post-747" class="post_box grt top" itemscope="" itemtype="http://schema.org/Article">
+				<meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/">
+				<header class="headline-container">
+					<h1 class="headline" itemprop="headline">Build a Sweet Photo Slider with AngularJS Animate</h1>
+					<div class="byline">
+						<span class="post_author" itemprop="author">Lukas Ruebbelke</span>
+						<meta itemprop="datePublished" content="2013-09-15">
+						<meta itemprop="dateModified" content="2016-04-12">
+					</div>
+				</header>
+				<section id="comments">
+				</section>
+				<img src="./angular-imageSlider_files/slider.png" class="attachment-full size-full wp-post-image" alt="slider" itemprop="image">
+				<div class="post_content" itemprop="articleBody">
+<h2>The Setup</h2>
+<p>AngularJS animations took another shot of performance enhancing drugs with a new API rewrite for AngularJS 1.2. Matias Niemela, aka <a href="http://www.yearofmoo.com/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.yearofmoo.com/&#39;, &#39;Year of Moo&#39;]);" title="Year of Moo" target="_blank">Year of Moo</a> has been doing an incredible job on the project and I wanted to showcase how easy it is to work with the new API by building a slider in about 50 lines of JavaScript and even fewer lines of HTML.</p>
+<p>For an extra punch we are going to do this JavaScript style using the <a href="http://www.greensock.com/gsap-js/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.greensock.com/gsap-js/&#39;, &#39;Greensock&#39;]);" title="Greensock" target="_blank">Greensock</a> animation library which was a staple in the Flash world and has been ported over to JavaScript. I cannot say enough great things about the work that Jack Doyle has done on this project. I have been using it for years and I love it!</p>
+<p>Check out the demo and grab the repository off of Github and let’s get started!</p>
+<a class="button" target="_blank" href="http://onehungrymind.com/demos/slider/"><span>Demo</span></a>
+<a href="https://github.com/simpulton/angular-photo-slider" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/simpulton/angular-photo-slider&#39;, &#39;Code&#39;]);" class="button" target="_blank"><span>Code</span></a>
+<h2>Building the Slider</h2>
+<p>We are going to assemble the photo slider in two phases. The first phase is building out the photo slider from a functional standpoint and the second phase involves wiring up the animations. DISCLAIMER: I am not going to be digging into the CSS that I used to assemble the slider because I want to focus on the AngularJS parts specifically but the layout is fairly straightforward.</p>
+<h3>Step 1a: Starting HTML</h3>
+<p>Here is the HTML in the <strong>index.html</strong> file that we are going to be starting with. In AngularJS 1.2, animations are no longer part of the core and that is why we are including <strong>angular-animate.min.js</strong> in conjunction with <strong>angular.min.js</strong>. We are also including <strong>TweenMax</strong> which is the Greensock animation library that is going to be doing all the heavy lifting for us.</p>
+<pre data-enlighter-language="html" class="EnlighterJSRAW" style="display: none;">&lt;!DOCTYPE html&gt;
+&lt;html ng-app="website"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;AngularJS Animate Slider&lt;/title&gt;
+    &lt;link href="css/bootstrap.css" rel="stylesheet"&gt;
+    &lt;link rel="stylesheet" href="css/styles.css"&gt;
+&lt;/head&gt;
+
+&lt;body ng-controller="MainCtrl"&gt;
+
+&lt;!-- SLIDER GOES HERE --&gt;
+
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/app.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="st2">&lt;!DOCTYPE html&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;html</span><span class=""> </span><span class="kw2">ng-app</span><span class="kw1">=</span><span class="st0">"website"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;head</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">&lt;meta</span><span class=""> </span><span class="kw2">charset</span><span class="kw1">=</span><span class="st0">"utf-8"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="kw1">&lt;title</span><span class="kw1">&gt;</span><span class="">AngularJS Animate Slider</span><span class="kw1">&lt;/title&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">&lt;link</span><span class=""> </span><span class="kw2">href</span><span class="kw1">=</span><span class="st0">"css/bootstrap.css"</span><span class=""> </span><span class="kw2">rel</span><span class="kw1">=</span><span class="st0">"stylesheet"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="kw1">&lt;link</span><span class=""> </span><span class="kw2">rel</span><span class="kw1">=</span><span class="st0">"stylesheet"</span><span class=""> </span><span class="kw2">href</span><span class="kw1">=</span><span class="st0">"css/styles.css"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;/head&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;body</span><span class=""> </span><span class="kw2">ng-controller</span><span class="kw1">=</span><span class="st0">"MainCtrl"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span></li><li class=" even"><span class=""></span><span class="co2">&lt;!-- SLIDER GOES HERE --&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;script</span><span class=""> </span><span class="kw2">src</span><span class="kw1">=</span><span class="st0">"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="kw1">&gt;</span><span class="kw1">&lt;/script&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;script</span><span class=""> </span><span class="kw2">src</span><span class="kw1">=</span><span class="st0">"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js"</span><span class="kw1">&gt;</span><span class="kw1">&lt;/script&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;script</span><span class=""> </span><span class="kw2">src</span><span class="kw1">=</span><span class="st0">"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"</span><span class="kw1">&gt;</span><span class="kw1">&lt;/script&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;script</span><span class=""> </span><span class="kw2">src</span><span class="kw1">=</span><span class="st0">"http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"</span><span class="kw1">&gt;</span><span class="kw1">&lt;/script&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;script</span><span class=""> </span><span class="kw2">src</span><span class="kw1">=</span><span class="st0">"js/app.js"</span><span class="kw1">&gt;</span><span class="kw1">&lt;/script&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;/body&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;/html&gt;</span></li></ol><pre style="display: none;">&lt;!DOCTYPE html&gt;
+&lt;html ng-app="website"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;AngularJS Animate Slider&lt;/title&gt;
+    &lt;link href="css/bootstrap.css" rel="stylesheet"&gt;
+    &lt;link rel="stylesheet" href="css/styles.css"&gt;
+&lt;/head&gt;
+
+&lt;body ng-controller="MainCtrl"&gt;
+
+&lt;!-- SLIDER GOES HERE --&gt;
+
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/app.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>We are also bootstrapping the application with <strong>ng-app=”website”</strong> on the <strong>html</strong> tag and defining the <strong>MainCtrl</strong> on the <strong>body</strong> tag.</p>
+<h3>Step 1b: Starting JavaScript</h3>
+<p>And in the <strong>js/app.js</strong> file you will see the bare minimum JavaScript that we need to make a working AngularJS application.</p>
+<pre data-enlighter-language="js" class="EnlighterJSRAW" style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) { });
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="">angular</span><span class="sy0">.</span><span class="me0">module</span><span class="br0">(</span><span class="st0">'website'</span><span class="sy0">,</span><span class=""> </span><span class="br0">[</span><span class="st0">'ngAnimate'</span><span class="br0">]</span><span class="br0">)</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">.</span><span class="me0">controller</span><span class="br0">(</span><span class="st0">'MainCtrl'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">$scope</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""> </span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span></li></ol><pre style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) { });</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>The most important thing to point out is that we are injecting <strong>ngAnimate</strong> as a sub-module into the <strong>website</strong> module. Once we have done this, animations will be available for the entire module.</p>
+<h3>Step 2: Set Up the Slides</h3>
+<p>We are going to create a collection of image objects that we can use to bind to in the HTML to display the photos and also use to assemble the navigation.</p>
+<pre data-enlighter-language="js" class="EnlighterJSRAW" style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        $scope.slides = [
+            {image: 'images/img00.jpg', description: 'Image 00'},
+            {image: 'images/img01.jpg', description: 'Image 01'},
+            {image: 'images/img02.jpg', description: 'Image 02'},
+            {image: 'images/img03.jpg', description: 'Image 03'},
+            {image: 'images/img04.jpg', description: 'Image 04'}
+        ];
+    });
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="">angular</span><span class="sy0">.</span><span class="me0">module</span><span class="br0">(</span><span class="st0">'website'</span><span class="sy0">,</span><span class=""> </span><span class="br0">[</span><span class="st0">'ngAnimate'</span><span class="br0">]</span><span class="br0">)</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">.</span><span class="me0">controller</span><span class="br0">(</span><span class="st0">'MainCtrl'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">$scope</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">        $scope</span><span class="sy0">.</span><span class="me0">slides</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="br0">[</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img00.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 00'</span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" odd"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img01.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 01'</span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img02.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 02'</span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" odd"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img03.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 03'</span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img04.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 04'</span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">        </span><span class="br0">]</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span></li></ol><pre style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        $scope.slides = [
+            {image: 'images/img00.jpg', description: 'Image 00'},
+            {image: 'images/img01.jpg', description: 'Image 01'},
+            {image: 'images/img02.jpg', description: 'Image 02'},
+            {image: 'images/img03.jpg', description: 'Image 03'},
+            {image: 'images/img04.jpg', description: 'Image 04'}
+        ];
+    });</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>We have defined a <strong>slides</strong> array on <strong>$scope</strong> that we are going use in the next step.</p>
+<h3>Step 3: Display the Slides</h3>
+<p>To display the slides we are going to loop over the <strong>slides</strong> array using <strong>ng-repeat</strong> and attach an <strong>img</strong> element for each <strong>slide</strong> in the <strong>slides</strong> array.</p>
+<pre data-enlighter-language="html" class="EnlighterJSRAW" style="display: none;">&lt;body ng-controller="MainCtrl"&gt;
+
+&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide" ng-src="{{slide.image}}"&gt;
+&lt;/div&gt;
+&lt;!-- CODE OMITTED --&gt;
+
+&lt;/body&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="kw1">&lt;body</span><span class=""> </span><span class="kw2">ng-controller</span><span class="kw1">=</span><span class="st0">"MainCtrl"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;div</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"container slider"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">&lt;img</span><span class=""> </span><span class="kw2">ng-repeat</span><span class="kw1">=</span><span class="st0">"slide in slides"</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"slide"</span><span class=""> </span><span class="kw2">ng-src</span><span class="kw1">=</span><span class="st0">"{{slide.image}}"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;/div&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="co2">&lt;!-- CODE OMITTED --&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;/body&gt;</span></li></ol><pre style="display: none;">&lt;body ng-controller="MainCtrl"&gt;
+
+&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide" ng-src="{{slide.image}}"&gt;
+&lt;/div&gt;
+&lt;!-- CODE OMITTED --&gt;
+
+&lt;/body&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>Using <strong>ng-repeat=”slide in slides”</strong> we gain access to the <strong>slide.image</strong> property which we bind to <strong>ng-src</strong> with double curly braces.</p>
+<h3>Step 4a: Display a Single Slide</h3>
+<p>Now that we are displaying the images on the page it is time to add the functionality to keep track of what slide is being displayed.</p>
+<pre data-enlighter-language="js" class="EnlighterJSRAW" style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        $scope.slides = [
+            {image: 'images/img00.jpg', description: 'Image 00'},
+            {image: 'images/img01.jpg', description: 'Image 01'},
+            {image: 'images/img02.jpg', description: 'Image 02'},
+            {image: 'images/img03.jpg', description: 'Image 03'},
+            {image: 'images/img04.jpg', description: 'Image 04'}
+        ];
+
+&lt;pre&gt;&lt;code&gt;    $scope.currentIndex = 0;
+
+    $scope.setCurrentSlideIndex = function (index) {
+        $scope.currentIndex = index;
+    };
+
+    $scope.isCurrentSlideIndex = function (index) {
+        return $scope.currentIndex === index;
+    };
+});
+&lt;/code&gt;&lt;/pre&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="">angular</span><span class="sy0">.</span><span class="me0">module</span><span class="br0">(</span><span class="st0">'website'</span><span class="sy0">,</span><span class=""> </span><span class="br0">[</span><span class="st0">'ngAnimate'</span><span class="br0">]</span><span class="br0">)</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">.</span><span class="me0">controller</span><span class="br0">(</span><span class="st0">'MainCtrl'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">$scope</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">        $scope</span><span class="sy0">.</span><span class="me0">slides</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="br0">[</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img00.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 00'</span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" odd"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img01.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 01'</span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img02.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 02'</span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" odd"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img03.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 03'</span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">{</span><span class="">image</span><span class="sy0">:</span><span class=""> </span><span class="st0">'images/img04.jpg'</span><span class="sy0">,</span><span class=""> description</span><span class="sy0">:</span><span class=""> </span><span class="st0">'Image 04'</span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">        </span><span class="br0">]</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">pre</span><span class="sy0">&gt;</span><span class="sy0">&lt;</span><span class="">code</span><span class="sy0">&gt;</span><span class="">    $scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="nu0">0</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class="">    $scope</span><span class="sy0">.</span><span class="me0">setCurrentSlideIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">index</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">        $scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> index</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="br0">}</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class="">    $scope</span><span class="sy0">.</span><span class="me0">isCurrentSlideIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">index</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">        </span><span class="kw1">return</span><span class=""> $scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">=</span><span class="sy0">=</span><span class="sy0">=</span><span class=""> index</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="br0">}</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="re0">/code&gt;&lt;/</span><span class="">pre</span><span class="sy0">&gt;</span></li></ol><pre style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        $scope.slides = [
+            {image: 'images/img00.jpg', description: 'Image 00'},
+            {image: 'images/img01.jpg', description: 'Image 01'},
+            {image: 'images/img02.jpg', description: 'Image 02'},
+            {image: 'images/img03.jpg', description: 'Image 03'},
+            {image: 'images/img04.jpg', description: 'Image 04'}
+        ];
+
+&lt;pre&gt;&lt;code&gt;    $scope.currentIndex = 0;
+
+    $scope.setCurrentSlideIndex = function (index) {
+        $scope.currentIndex = index;
+    };
+
+    $scope.isCurrentSlideIndex = function (index) {
+        return $scope.currentIndex === index;
+    };
+});
+&lt;/code&gt;&lt;/pre&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>We are going to create a <strong>currentIndex</strong> property and initialize it to <strong>0</strong> since we want to start with the first slide. From there, we add <strong>setCurrentSlideIndex</strong> which allows us to modify <strong>currentIndex</strong> by passing in a new <strong>index</strong> value.</p>
+<p>The final piece is to add a simple method called <strong>isCurrentSlideIndex</strong> which allows us to get a boolean value if the <strong>index</strong> we send in is the current slide index we are on.</p>
+<h3>Step 4b: Display a Single Slide</h3>
+<p>Why would we want a function that tells if an index is the current slide index? Good question! One of my favorite things about AngularJS is that not only can we bind to primitive values but functions as well. This allows us to toggle functionality in the layout based on the value of a function.</p>
+<pre data-enlighter-language="html" class="EnlighterJSRAW" style="display: none;">
+&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+&lt;/div&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="kw1">&lt;div</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"container slider"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">&lt;img</span><span class=""> </span><span class="kw2">ng-repeat</span><span class="kw1">=</span><span class="st0">"slide in slides"</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"slide"</span><span class=""></span></li><li class=" odd"><span class="">         </span><span class="kw2">ng-hide</span><span class="kw1">=</span><span class="st0">"!isCurrentSlideIndex($index)"</span><span class=""> </span><span class="kw2">ng-src</span><span class="kw1">=</span><span class="st0">"{{slide.image}}"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;/div&gt;</span></li></ol><pre style="display: none;">&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+&lt;/div&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>Case and point, we want to hide the image if it is not the current slide. The addition of <strong>ng-hide=”!isCurrentSlideIndex($index)”</strong> is just the golden ticket we need to do this. This is a fairly concise piece of code that is actually doing quite a bit and so let us break it down into pieces. <strong>ng-hide</strong> will hide an element with <strong>display:none</strong> if its expression evaluates to true. <strong>ng-repeat</strong> generates a handy variable called <strong>$index</strong> that allows you to reference the index of the item that is currently being processed. This is perfect since we can use this to coordinate <strong>currentIndex</strong> in the <strong>MainCtrl</strong>. From there, we are simply saying that if the <strong>$index</strong> of that image is <strong>NOT</strong> the <strong>currentIndex</strong> then hide the image.</p>
+<h3>Step 4c: Display a Single Slide</h3>
+<p>And so now that we are showing and hiding images based on <strong>currentIndex</strong> we are going to create a navigation mechanism that will allow us to manipulate <strong>currentIndex</strong>.</p>
+<pre data-enlighter-language="html" class="EnlighterJSRAW" style="display: none;">
+&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+
+&lt;nav class="nav"&gt;
+&lt;div class="wrapper"&gt;
+&lt;ul class="dots"&gt;
+&lt;li class="dot" ng-repeat="slide in slides"&gt;
+                    &lt;a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+                       ng-click="setCurrentSlideIndex($index);"&gt;{{slide.description}}&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="kw1">&lt;div</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"container slider"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">&lt;img</span><span class=""> </span><span class="kw2">ng-repeat</span><span class="kw1">=</span><span class="st0">"slide in slides"</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"slide"</span><span class=""></span></li><li class=" odd"><span class="">         </span><span class="kw2">ng-hide</span><span class="kw1">=</span><span class="st0">"!isCurrentSlideIndex($index)"</span><span class=""> </span><span class="kw2">ng-src</span><span class="kw1">=</span><span class="st0">"{{slide.image}}"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;nav</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"nav"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;div</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"wrapper"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;ul</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"dots"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;li</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"dot"</span><span class=""> </span><span class="kw2">ng-repeat</span><span class="kw1">=</span><span class="st0">"slide in slides"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" odd"><span class="">                    </span><span class="kw1">&lt;a</span><span class=""> </span><span class="kw2">href</span><span class="kw1">=</span><span class="st0">"#"</span><span class=""> </span><span class="kw2">ng-class</span><span class="kw1">=</span><span class="st0">"{'</span><span class="">active':isCurrentSlideIndex($index)}"</span></li><li class=" even"><span class="">                       </span><span class="kw2">ng-click</span><span class="kw1">=</span><span class="st0">"setCurrentSlideIndex($index);"</span><span class="kw1">&gt;</span><span class="">{{slide.description}}</span><span class="kw1">&lt;/a&gt;</span><span class="kw1">&lt;/li&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;/ul&gt;</span><span class="kw1">&lt;/div&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;/nav&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;/div&gt;</span></li></ol><pre style="display: none;">&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+
+&lt;nav class="nav"&gt;
+&lt;div class="wrapper"&gt;
+&lt;ul class="dots"&gt;
+&lt;li class="dot" ng-repeat="slide in slides"&gt;
+                    &lt;a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+                       ng-click="setCurrentSlideIndex($index);"&gt;{{slide.description}}&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;/nav&gt;
+&lt;/div&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>You are now going to see the power of having a single source of truth that is abstracted away from your DOM. Notice the code on the <strong>li</strong> tag and its child elements. Did you notice there some recurring themes from the code used to generate the images?</p>
+<p>We are going to use <strong>ng-repeat</strong> again to generate a navigation element for each item in the <strong>slides</strong> array. We are also going to use <strong>ng-click</strong> to call <strong>setCurrentSlideIndex</strong> and set <strong>currentIndex</strong> to the <strong>$index</strong> of the element that is clicked. The additional twist to all of this is that we are dynamically attaching an <strong>active</strong> class using <strong>ng-class</strong> and the value returned by <strong>isCurrentSlideIndex($index)</strong>. If the value returned by <strong>isCurrentSlideIndex</strong> is <strong>true</strong> then the <strong>active</strong> class is applied.</p>
+<p>At this point, you should be able click a navigation item and see the corresponding image. Minimum viable product baby!</p>
+<h3>Step 5a: Next and Previous Slide</h3>
+<p>We can also navigate through the slides in a linear fashion by incrementing and decrementing <strong>currentIndex</strong>.</p>
+<pre data-enlighter-language="js" class="EnlighterJSRAW" style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        $scope.slides = [ /* CODE OMITTED */ ];
+
+&lt;pre&gt;&lt;code&gt;    $scope.currentIndex = 0;
+
+    $scope.setCurrentSlideIndex = function (index) {
+        $scope.currentIndex = index;
+    };
+
+    $scope.isCurrentSlideIndex = function (index) {
+        return $scope.currentIndex === index;
+    };
+
+    $scope.prevSlide = function () {
+        $scope.currentIndex = ($scope.currentIndex &lt; $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
+    };
+
+    $scope.nextSlide = function () {
+        $scope.currentIndex = ($scope.currentIndex &gt; 0) ? --$scope.currentIndex : $scope.slides.length - 1;
+    };
+});
+&lt;/code&gt;&lt;/pre&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="">angular</span><span class="sy0">.</span><span class="me0">module</span><span class="br0">(</span><span class="st0">'website'</span><span class="sy0">,</span><span class=""> </span><span class="br0">[</span><span class="st0">'ngAnimate'</span><span class="br0">]</span><span class="br0">)</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">.</span><span class="me0">controller</span><span class="br0">(</span><span class="st0">'MainCtrl'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">$scope</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">        $scope</span><span class="sy0">.</span><span class="me0">slides</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="br0">[</span><span class=""> </span><span class="re0">/* CODE OMITTED */</span><span class=""> </span><span class="br0">]</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">pre</span><span class="sy0">&gt;</span><span class="sy0">&lt;</span><span class="">code</span><span class="sy0">&gt;</span><span class="">    $scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="nu0">0</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class="">    $scope</span><span class="sy0">.</span><span class="me0">setCurrentSlideIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">index</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">        $scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> index</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="br0">}</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class="">    $scope</span><span class="sy0">.</span><span class="me0">isCurrentSlideIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">index</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">        </span><span class="kw1">return</span><span class=""> $scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">=</span><span class="sy0">=</span><span class="sy0">=</span><span class=""> index</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="br0">}</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class="">    $scope</span><span class="sy0">.</span><span class="me0">prevSlide</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">        $scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="br0">(</span><span class="">$scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">&lt;</span><span class=""> $scope</span><span class="sy0">.</span><span class="me0">slides</span><span class="sy0">.</span><span class="me0">length</span><span class=""> </span><span class="sy0">-</span><span class=""> </span><span class="nu0">1</span><span class="br0">)</span><span class=""> </span><span class="sy0">?</span><span class=""> </span><span class="sy0">+</span><span class="sy0">+</span><span class="">$scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">:</span><span class=""> </span><span class="nu0">0</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="br0">}</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class="">    $scope</span><span class="sy0">.</span><span class="me0">nextSlide</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">        $scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">=</span><span class=""> </span><span class="br0">(</span><span class="">$scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">&gt;</span><span class=""> </span><span class="nu0">0</span><span class="br0">)</span><span class=""> </span><span class="sy0">?</span><span class=""> </span><span class="sy0">-</span><span class="sy0">-</span><span class="">$scope</span><span class="sy0">.</span><span class="me0">currentIndex</span><span class=""> </span><span class="sy0">:</span><span class=""> $scope</span><span class="sy0">.</span><span class="me0">slides</span><span class="sy0">.</span><span class="me0">length</span><span class=""> </span><span class="sy0">-</span><span class=""> </span><span class="nu0">1</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="br0">}</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="re0">/code&gt;&lt;/</span><span class="">pre</span><span class="sy0">&gt;</span></li></ol><pre style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        $scope.slides = [ /* CODE OMITTED */ ];
+
+&lt;pre&gt;&lt;code&gt;    $scope.currentIndex = 0;
+
+    $scope.setCurrentSlideIndex = function (index) {
+        $scope.currentIndex = index;
+    };
+
+    $scope.isCurrentSlideIndex = function (index) {
+        return $scope.currentIndex === index;
+    };
+
+    $scope.prevSlide = function () {
+        $scope.currentIndex = ($scope.currentIndex &lt; $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
+    };
+
+    $scope.nextSlide = function () {
+        $scope.currentIndex = ($scope.currentIndex &gt; 0) ? --$scope.currentIndex : $scope.slides.length - 1;
+    };
+});
+&lt;/code&gt;&lt;/pre&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>To accomplish this wee need to add <strong>prevSlide</strong> and <strong>nextSlide</strong> methods which decrement and increment <strong>currentIndex</strong> respectively. The ternary operators in these methods are in place to allow for looping. If you are at the first slide and hit the previous button, <strong>currentIndex</strong> jumps to the last item in the <strong>slides</strong> array. If you are at the last slide and hit the next button, then you jump to the first slide. That’s right! You spin me right round!</p>
+<h3>Step 5b: Next and Previous Slide</h3>
+<p>And how do we invoke the awesome powers of <strong>nextSlide</strong> and <strong>prevSlide</strong>? ng-click! bam! done! next!</p>
+<pre data-enlighter-language="html" class="EnlighterJSRAW" style="display: none;">
+&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+
+    &lt;a class="arrow prev" href="#" ng-click="nextSlide()"&gt;&lt;/a&gt;
+    &lt;a class="arrow next" href="#" ng-click="prevSlide()"&gt;&lt;/a&gt;
+
+&lt;nav class="nav"&gt;
+&lt;div class="wrapper"&gt;
+&lt;ul class="dots"&gt;
+&lt;li class="dot" ng-repeat="slide in slides"&gt;
+                    &lt;a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+                       ng-click="setCurrentSlideIndex($index);"&gt;{{slide.description}}&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="kw1">&lt;div</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"container slider"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">&lt;img</span><span class=""> </span><span class="kw2">ng-repeat</span><span class="kw1">=</span><span class="st0">"slide in slides"</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"slide"</span><span class=""></span></li><li class=" odd"><span class="">         </span><span class="kw2">ng-hide</span><span class="kw1">=</span><span class="st0">"!isCurrentSlideIndex($index)"</span><span class=""> </span><span class="kw2">ng-src</span><span class="kw1">=</span><span class="st0">"{{slide.image}}"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class="">    </span><span class="kw1">&lt;a</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"arrow prev"</span><span class=""> </span><span class="kw2">href</span><span class="kw1">=</span><span class="st0">"#"</span><span class=""> </span><span class="kw2">ng-click</span><span class="kw1">=</span><span class="st0">"nextSlide()"</span><span class="kw1">&gt;</span><span class="kw1">&lt;/a&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">&lt;a</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"arrow next"</span><span class=""> </span><span class="kw2">href</span><span class="kw1">=</span><span class="st0">"#"</span><span class=""> </span><span class="kw2">ng-click</span><span class="kw1">=</span><span class="st0">"prevSlide()"</span><span class="kw1">&gt;</span><span class="kw1">&lt;/a&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;nav</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"nav"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;div</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"wrapper"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;ul</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"dots"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;li</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"dot"</span><span class=""> </span><span class="kw2">ng-repeat</span><span class="kw1">=</span><span class="st0">"slide in slides"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">                    </span><span class="kw1">&lt;a</span><span class=""> </span><span class="kw2">href</span><span class="kw1">=</span><span class="st0">"#"</span><span class=""> </span><span class="kw2">ng-class</span><span class="kw1">=</span><span class="st0">"{'</span><span class="">active':isCurrentSlideIndex($index)}"</span></li><li class=" odd"><span class="">                       </span><span class="kw2">ng-click</span><span class="kw1">=</span><span class="st0">"setCurrentSlideIndex($index);"</span><span class="kw1">&gt;</span><span class="">{{slide.description}}</span><span class="kw1">&lt;/a&gt;</span><span class="kw1">&lt;/li&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;/ul&gt;</span><span class="kw1">&lt;/div&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;/nav&gt;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="kw1">&lt;/div&gt;</span></li></ol><pre style="display: none;">&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+
+    &lt;a class="arrow prev" href="#" ng-click="nextSlide()"&gt;&lt;/a&gt;
+    &lt;a class="arrow next" href="#" ng-click="prevSlide()"&gt;&lt;/a&gt;
+
+&lt;nav class="nav"&gt;
+&lt;div class="wrapper"&gt;
+&lt;ul class="dots"&gt;
+&lt;li class="dot" ng-repeat="slide in slides"&gt;
+                    &lt;a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+                       ng-click="setCurrentSlideIndex($index);"&gt;{{slide.description}}&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;/nav&gt;
+&lt;/div&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>And that concludes the first phase of our photo slider project. We have literally created a fully functional slider in like 30 lines of JavaScript and some HTML. AngularJS still impresses me at how much you can get done with so little.</p>
+<h2>Animating the Slider</h2>
+<p>And now on the fun part! <em>Heralding trumpets in the background</em> Behold! AngularJS animations accompanied the regal Sir TweenMax of Greensock.</p>
+<h3>Step 6: Laying the Foundation</h3>
+<p>Animations within AngularJS are based on specific events that trigger the JavaScript or CSS animations. There are some AngularJS directives that come with their own special animation events as well as some generic events such as <strong>addClass</strong> and <strong>removeClass</strong> which get triggered when a class is added or removed.</p>
+<pre data-enlighter-language="js" class="EnlighterJSRAW" style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        // CODE OMITTED
+    })
+    .animation('.slide-animation', function () {
+        return {
+            addClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    // ANIMATION CODE GOES HERE
+                }
+                else {
+                    done();
+                }
+            },
+            removeClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    // ANIMATION CODE GOES HERE
+                }
+                else {
+                    done();
+                }
+            }
+        };
+    });
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="">angular</span><span class="sy0">.</span><span class="me0">module</span><span class="br0">(</span><span class="st0">'website'</span><span class="sy0">,</span><span class=""> </span><span class="br0">[</span><span class="st0">'ngAnimate'</span><span class="br0">]</span><span class="br0">)</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">.</span><span class="me0">controller</span><span class="br0">(</span><span class="st0">'MainCtrl'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">$scope</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">       </span><span class="co1"> // CODE OMITTED</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="br0">}</span><span class="br0">)</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="sy0">.</span><span class="me0">animation</span><span class="br0">(</span><span class="st0">'.slide-animation'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">        </span><span class="kw1">return</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">            addClass</span><span class="sy0">:</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> className</span><span class="sy0">,</span><span class=""> done</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="kw1">if</span><span class=""> </span><span class="br0">(</span><span class="">className </span><span class="sy0">=</span><span class="sy0">=</span><span class=""> </span><span class="st0">'ng-hide'</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">                   </span><span class="co1"> // ANIMATION CODE GOES HERE</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="kw1">else</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                    done</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" odd"><span class="">            removeClass</span><span class="sy0">:</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> className</span><span class="sy0">,</span><span class=""> done</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="kw1">if</span><span class=""> </span><span class="br0">(</span><span class="">className </span><span class="sy0">=</span><span class="sy0">=</span><span class=""> </span><span class="st0">'ng-hide'</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">                   </span><span class="co1"> // ANIMATION CODE GOES HERE</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="kw1">else</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                    done</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">        </span><span class="br0">}</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span></li></ol><pre style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        // CODE OMITTED
+    })
+    .animation('.slide-animation', function () {
+        return {
+            addClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    // ANIMATION CODE GOES HERE
+                }
+                else {
+                    done();
+                }
+            },
+            removeClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    // ANIMATION CODE GOES HERE
+                }
+                else {
+                    done();
+                }
+            }
+        };
+    });</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>JavaScript animations are defined using the <strong>animation</strong> service and follows a similar convention as everything else within the AngularJS domain by taking a name and function parameter. It is important to note that the name is defined as a CSS class since all animations in AngularJS follow a class based naming convention.</p>
+<p>We are going to call our animation <strong>.slide-animation</strong> and within the factory function, we are defining handlers for the <strong>addClass</strong> and <strong>removeClass</strong> events. These events get fired when any class is dynamically added to the element the animation is defined on in this case we only want to act on <strong>ng-hide</strong> activity. Once the event has been triggered and the appropriate handler has been called, AngularJS pretty much delegates the entire animation to whatever you have chosen to handle that. The only responsibility you have is to call <strong>done</strong> when the animation is complete so that AngularJS knows the animation is finished.</p>
+<h3>Step 7: Animating the Intro</h3>
+<p>Now that the AngularJS part is set up, it is time to add in the actual animations via TweenMax. We are going to start with the ‘intro’ and define the animation that happens when <strong>ng-hide</strong> is added.</p>
+<p>NOTE: By ‘intro’ I mean the animation that happens when we introduce the ng-hide class. This could be confusing because the result of this animation is that an element actually leaves which in THAT context would be considered an ‘outro’. Work with me here!</p>
+<pre data-enlighter-language="js" class="EnlighterJSRAW" style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        // CODE OMITTED
+    })
+    .animation('.slide-animation', function () {
+        return {
+            addClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+                }
+                else {
+                    done();
+                }
+            },
+            removeClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    // ANIMATION CODE GOES HERE
+                }
+                else {
+                    done();
+                }
+            }
+        };
+    });
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="">angular</span><span class="sy0">.</span><span class="me0">module</span><span class="br0">(</span><span class="st0">'website'</span><span class="sy0">,</span><span class=""> </span><span class="br0">[</span><span class="st0">'ngAnimate'</span><span class="br0">]</span><span class="br0">)</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">.</span><span class="me0">controller</span><span class="br0">(</span><span class="st0">'MainCtrl'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">$scope</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">       </span><span class="co1"> // CODE OMITTED</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="br0">}</span><span class="br0">)</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="sy0">.</span><span class="me0">animation</span><span class="br0">(</span><span class="st0">'.slide-animation'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">        </span><span class="kw1">return</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">            addClass</span><span class="sy0">:</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> className</span><span class="sy0">,</span><span class=""> done</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="kw1">if</span><span class=""> </span><span class="br0">(</span><span class="">className </span><span class="sy0">=</span><span class="sy0">=</span><span class=""> </span><span class="st0">'ng-hide'</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">                    TweenMax</span><span class="sy0">.</span><span class="me0">to</span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> </span><span class="nu0">0</span><span class="nu0">.</span><span class="me0">5</span><span class="sy0">,</span><span class=""> </span><span class="br0">{</span><span class="">left</span><span class="sy0">:</span><span class=""> </span><span class="sy0">-</span><span class="">element</span><span class="sy0">.</span><span class="me0">parent</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">.</span><span class="me0">width</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">,</span><span class=""> onComplete</span><span class="sy0">:</span><span class=""> done </span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="kw1">else</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                    done</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" odd"><span class="">            removeClass</span><span class="sy0">:</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> className</span><span class="sy0">,</span><span class=""> done</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="kw1">if</span><span class=""> </span><span class="br0">(</span><span class="">className </span><span class="sy0">=</span><span class="sy0">=</span><span class=""> </span><span class="st0">'ng-hide'</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">                   </span><span class="co1"> // ANIMATION CODE GOES HERE</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="kw1">else</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                    done</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">        </span><span class="br0">}</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span></li></ol><pre style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        // CODE OMITTED
+    })
+    .animation('.slide-animation', function () {
+        return {
+            addClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+                }
+                else {
+                    done();
+                }
+            },
+            removeClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    // ANIMATION CODE GOES HERE
+                }
+                else {
+                    done();
+                }
+            }
+        };
+    });</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>TweenMax is really robust and I recommend you check out <a href="https://www.greensock.com/get-started-js/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://www.greensock.com/get-started-js/&#39;, &#39;Getting Started with the JavaScript Version of the GreenSock Animation Platform (GSAP)&#39;]);">Getting Started with the JavaScript Version of the GreenSock Animation Platform (GSAP)</a> on how to get up and running. For the sake of this tutorial, I am going to simplify TweenMax by saying that it basically takes the element you want to animate, the duration and a parameter object defining what and how you want the animation to work.</p>
+<p>The element we want to animate is the <strong>element</strong> parameter that gets injected into our event handler. Convenient! We are going to animate for half a second and we are saying that when <strong>ng-hide</strong> is added we want to move the element left the entire width of its parent element so that it is no longer visible. We are also calling <strong>done</strong> by passing it is as the callback for the <strong>onComplete</strong> handler.</p>
+<h3>Step 8: Animating the Outro</h3>
+<p>We are actually attaching <strong>.slide-animation</strong> to multiple elements via <strong>ng-repeat</strong> and so when one element is being hidden, another element is being shown. This means you have two opposite events being fired at the same time which together make for a really neat transition from one state to another. The ‘outro’ side of this animation is defining how we want the slide to appear when we remove the <strong>ng-hide</strong> class.</p>
+<pre data-enlighter-language="js" class="EnlighterJSRAW" style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        // CODE OMITTED
+    })
+    .animation('.slide-animation', function () {
+        return {
+            addClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+                }
+                else {
+                    done();
+                }
+            },
+            removeClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    element.removeClass('ng-hide');
+
+&lt;pre&gt;&lt;code&gt;                TweenMax.set(element, { left: element.parent().width() });
+                TweenMax.to(element, 0.5, {left: 0, onComplete: done });
+            }
+            else {
+                done();
+            }
+        }
+    };
+});
+&lt;/code&gt;&lt;/pre&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="">angular</span><span class="sy0">.</span><span class="me0">module</span><span class="br0">(</span><span class="st0">'website'</span><span class="sy0">,</span><span class=""> </span><span class="br0">[</span><span class="st0">'ngAnimate'</span><span class="br0">]</span><span class="br0">)</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="sy0">.</span><span class="me0">controller</span><span class="br0">(</span><span class="st0">'MainCtrl'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">$scope</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">       </span><span class="co1"> // CODE OMITTED</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="br0">}</span><span class="br0">)</span><span class=""></span></li><li class=" odd"><span class="">    </span><span class="sy0">.</span><span class="me0">animation</span><span class="br0">(</span><span class="st0">'.slide-animation'</span><span class="sy0">,</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">        </span><span class="kw1">return</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">            addClass</span><span class="sy0">:</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> className</span><span class="sy0">,</span><span class=""> done</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="kw1">if</span><span class=""> </span><span class="br0">(</span><span class="">className </span><span class="sy0">=</span><span class="sy0">=</span><span class=""> </span><span class="st0">'ng-hide'</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">                    TweenMax</span><span class="sy0">.</span><span class="me0">to</span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> </span><span class="nu0">0.5</span><span class="sy0">,</span><span class=""> </span><span class="br0">{</span><span class="">left</span><span class="sy0">:</span><span class=""> </span><span class="sy0">-</span><span class="">element</span><span class="sy0">.</span><span class="me0">parent</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">.</span><span class="me0">width</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">,</span><span class=""> onComplete</span><span class="sy0">:</span><span class=""> done </span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="kw1">else</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                    done</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">                </span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">}</span><span class="sy0">,</span><span class=""></span></li><li class=" odd"><span class="">            removeClass</span><span class="sy0">:</span><span class=""> </span><span class="kw2">function</span><span class=""> </span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> className</span><span class="sy0">,</span><span class=""> done</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" even"><span class="">                </span><span class="kw1">if</span><span class=""> </span><span class="br0">(</span><span class="">className </span><span class="sy0">=</span><span class="sy0">=</span><span class=""> </span><span class="st0">'ng-hide'</span><span class="br0">)</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">                    element</span><span class="sy0">.</span><span class="me0">removeClass</span><span class="br0">(</span><span class="st0">'ng-hide'</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span></li><li class=" odd"><span class=""></span><span class="sy0">&lt;</span><span class="">pre</span><span class="sy0">&gt;</span><span class="sy0">&lt;</span><span class="">code</span><span class="sy0">&gt;</span><span class="">                TweenMax</span><span class="sy0">.</span><span class="me0">set</span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> </span><span class="br0">{</span><span class=""> left</span><span class="sy0">:</span><span class=""> element</span><span class="sy0">.</span><span class="me0">parent</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">.</span><span class="me0">width</span><span class="br0">(</span><span class="br0">)</span><span class=""> </span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class="">                TweenMax</span><span class="sy0">.</span><span class="me0">to</span><span class="br0">(</span><span class="">element</span><span class="sy0">,</span><span class=""> </span><span class="nu0">0.5</span><span class="sy0">,</span><span class=""> </span><span class="br0">{</span><span class="">left</span><span class="sy0">:</span><span class=""> </span><span class="nu0">0</span><span class="sy0">,</span><span class=""> onComplete</span><span class="sy0">:</span><span class=""> done </span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class="">            </span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="kw1">else</span><span class=""> </span><span class="br0">{</span><span class=""></span></li><li class=" odd"><span class="">                done</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class="">            </span><span class="br0">}</span><span class=""></span></li><li class=" odd"><span class="">        </span><span class="br0">}</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="br0">}</span><span class="sy0">;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span><span class=""></span></li><li class=" even"><span class=""></span><span class="sy0">&lt;</span><span class="re0">/code&gt;&lt;/</span><span class="">pre</span><span class="sy0">&gt;</span></li></ol><pre style="display: none;">angular.module('website', ['ngAnimate'])
+    .controller('MainCtrl', function ($scope) {
+        // CODE OMITTED
+    })
+    .animation('.slide-animation', function () {
+        return {
+            addClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+                }
+                else {
+                    done();
+                }
+            },
+            removeClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    element.removeClass('ng-hide');
+
+&lt;pre&gt;&lt;code&gt;                TweenMax.set(element, { left: element.parent().width() });
+                TweenMax.to(element, 0.5, {left: 0, onComplete: done });
+            }
+            else {
+                done();
+            }
+        }
+    };
+});
+&lt;/code&gt;&lt;/pre&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>Small detour… because we cannot set <strong>!important</strong> via JavaScript, we are simply removing <strong>ng-hide</strong> immediately and taking it from there. This will hopefully be resolved in the final release of AngularJS 1.2. For further clarify check out the Year of Moo blog post. Translation: I just took Matias’s word for it!</p>
+<p>Now! Back on task! The first thing we are going to do is set the element immediately to the right of the slider by setting the <strong>left</strong> property to the width of the element’s parent. And then we simply animate on the <strong>left</strong> property to <strong>0</strong> so that the image slides in from right to left.</p>
+<h3>Step 9: Wiring It Up</h3>
+<p>Our <strong>.slide-animation</strong> is all dressed up but so far nowhere to go. Let’s change that.</p>
+<p>Now gather around for a demonstration on why I think AngularJS animations are so clever. This is our code <strong>without</strong> the animation.</p>
+<pre data-enlighter-language="html" class="EnlighterJSRAW" style="display: none;">
+&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+         &lt;!-- CODE OMITTED --&gt;
+&lt;/div&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="kw1">&lt;div</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"container slider"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">&lt;img</span><span class=""> </span><span class="kw2">ng-repeat</span><span class="kw1">=</span><span class="st0">"slide in slides"</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"slide"</span><span class=""></span></li><li class=" odd"><span class="">         </span><span class="kw2">ng-hide</span><span class="kw1">=</span><span class="st0">"!isCurrentSlideIndex($index)"</span><span class=""> </span><span class="kw2">ng-src</span><span class="kw1">=</span><span class="st0">"{{slide.image}}"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">         </span><span class="co2">&lt;!-- CODE OMITTED --&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;/div&gt;</span></li></ol><pre style="display: none;">&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+         &lt;!-- CODE OMITTED --&gt;
+&lt;/div&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>This is our code <strong>with</strong> the animation. Did you blink? Did you see it?!</p>
+<pre data-enlighter-language="html" class="EnlighterJSRAW" style="display: none;">
+&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide slide-animation"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+         &lt;!-- CODE OMITTED --&gt;
+&lt;/div&gt;
+</pre><div class="EnlighterJSWrapper beyondEnlighterJSWrapper"><ol class="hoverEnabled beyondEnlighterJS EnlighterJS"><li class=" odd"><span class="kw1">&lt;div</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"container slider"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">    </span><span class="kw1">&lt;img</span><span class=""> </span><span class="kw2">ng-repeat</span><span class="kw1">=</span><span class="st0">"slide in slides"</span><span class=""> </span><span class="kw2">class</span><span class="kw1">=</span><span class="st0">"slide slide-animation"</span><span class=""></span></li><li class=" odd"><span class="">         </span><span class="kw2">ng-hide</span><span class="kw1">=</span><span class="st0">"!isCurrentSlideIndex($index)"</span><span class=""> </span><span class="kw2">ng-src</span><span class="kw1">=</span><span class="st0">"{{slide.image}}"</span><span class="kw1">&gt;</span><span class=""></span></li><li class=" even"><span class="">         </span><span class="co2">&lt;!-- CODE OMITTED --&gt;</span><span class=""></span></li><li class=" odd"><span class=""></span><span class="kw1">&lt;/div&gt;</span></li></ol><pre style="display: none;">&lt;div class="container slider"&gt;
+    &lt;img ng-repeat="slide in slides" class="slide slide-animation"
+         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}"&gt;
+         &lt;!-- CODE OMITTED --&gt;
+&lt;/div&gt;</pre><div class="EnlighterJSToolbar"><a class="EnlighterJSRawButton" title="Toggle RAW Code"></a><a class="EnlighterJSWindowButton" title="Open Code in new Window"></a><span class="clear"></span></div></div>
+<p>That is exactly right! We are essentially wrapping up complex animation functionality in a class based directive. Goodness! I seriously love this stuff!</p>
+<h2>Conclusion</h2>
+<p>AngularJS animations are super powerful and super easy to spin up once you understand the events and conventions around them. I personally LOVE that they decided to move in the class based direction because it makes it really easy and non-intrusive to add animations your application and it is makes integration with other libraries really easy.</p>
+<p>To Matias and the AngularJS team… thank you for building something so incredibly awesome that is so fun and powerful to work with.</p>
+<p>To Jack Doyle… thank you for making what I consider to be the greatest animation library EVER!</p>
+<h2>Resources</h2>
+<p><a href="http://www.yearofmoo.com/2013/08/remastered-animation-in-angularjs-1-2.html" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.yearofmoo.com/2013/08/remastered-animation-in-angularjs-1-2.html&#39;, &#39;Remastered Animation in AngularJS 1.2&#39;]);" title="Remastered Animation in AngularJS 1.2" target="_blank">Remastered Animation in AngularJS 1.2</a></p>
+<p><a href="https://www.greensock.com/get-started-js/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://www.greensock.com/get-started-js/&#39;, &#39;Getting Started with the JavaScript Version of the GreenSock Animation Platform (GSAP)&#39;]);" title="Getting Started with the JavaScript Version of the GreenSock Animation Platform (GSAP)" target="_blank">Getting Started with the JavaScript Version of the GreenSock Animation Platform (GSAP)</a></p>
+<a class="button" target="_blank" href="http://onehungrymind.com/demos/slider/"><span>Demo</span></a>
+<a href="https://github.com/simpulton/angular-photo-slider" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/simpulton/angular-photo-slider&#39;, &#39;Code&#39;]);" class="button" target="_blank"><span>Code</span></a>
+				</div>
+			</article>
+		</div>
+		<div id="commentform">
+			<form method="post" action="http://onehungrymind.com/wp-comments-post.php">
+				<p class="comment_form_title">Leave a Comment</p>
+				<a rel="nofollow" id="cancel-comment-reply-link" href="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/#respond" style="display:none;">Cancel reply</a>
+				<p id="comment_form_name">
+					<label for="author">Name <span class="required" title="Required">*</span></label>
+					<input type="text" id="author" class="input_text" name="author" value="" tabindex="1" aria-required="true">
+				</p>
+				<p id="comment_form_email">
+					<label for="email">Email <span class="required" title="Required">*</span></label>
+					<input type="text" id="email" class="input_text" name="email" value="" tabindex="2" aria-required="true">
+				</p>
+				<p id="comment_form_url">
+					<label for="url">Website</label>
+					<input type="text" id="url" class="input_text" name="url" value="" tabindex="3">
+				</p>
+				<p id="comment_form_comment">
+					<label for="comment">Comment</label>
+					<textarea name="comment" id="comment" class="input_text" tabindex="4" rows="6"></textarea>
+				</p>
+				<p id="comment_form_submit">
+					<input type="submit" id="submit" class="input_submit" name="submit" tabindex="5" value="Submit">
+				</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="1a31761526"></p><p style="display: none;"></p><!-- MailChimp for WordPress v4.0.3 - https://mc4wp.com/ --><p class="mc4wp-checkbox mc4wp-checkbox-wp-comment-form"><label><input type="hidden" name="_mc4wp_subscribe_wp-comment-form" value="0"><input type="checkbox" name="_mc4wp_subscribe_wp-comment-form" value="1"><span>Sign me up for the newsletter!</span></label></p><!-- / MailChimp for WordPress --><input type="hidden" name="comment_post_ID" value="747" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+			</form>
+		<input type="hidden" id="ak_js" name="ak_js" value="1472976930200"></div>
+		<ul class="comment_list">
+			<li class="comment even thread-even depth-1" id="comment-1345">
+				<span class="comment_author"><a href="http://www.angular-tips.com/" rel="external nofollow" class="url">Foxandxss</a></span>
+				<span class="comment_date">September 16, 2013, 10:48 am</span>
+				<div class="comment_text" id="comment-body-1345"><p>Good demo, I like it.</p>
+<p>Animations is something I want to play with in a future.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1348">
+				<span class="comment_author"><a href="http://simplydiffrient.com/" rel="external nofollow" class="url">Clay Diffrient</a></span>
+				<span class="comment_date">September 17, 2013, 4:46 am</span>
+				<div class="comment_text" id="comment-body-1348"><p>Is there anyway to make it so that the animation slides the proper direction based on which arrow was clicked?  In the demo no matter which arrow I press the image always slides in from the right.  I would expect it to slide in from the left if I clicked the left arrow.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-1349">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">September 17, 2013, 4:54 am</span>
+				<div class="comment_text" id="comment-body-1349"><p>Good question… and there is indeed a way to do that. I cover that in Part 2 of this blog post but! feel free to give it a try on your own. I would love to see how someone else would approach this problem.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1658">
+				<span class="comment_author"><a href="http://www.ohkrapp.com/" rel="external nofollow" class="url">Florian</a></span>
+				<span class="comment_date">December 2, 2013, 2:52 pm</span>
+				<div class="comment_text" id="comment-body-1658"><p>Thanks, for this tutorial, great stuff.<br>
+But I have a problem. I put the slider in the middle of a one page website, and now all the time I push one of the arrows or dots it jumps to the beginning of the website. So how can I change the &lt;a class="arrow prev" href="#" …? </p>
+<p>Thanks in advance and cheers<br>
+Flo</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-2543">
+				<span class="comment_author">Prasad Gurjar</span>
+				<span class="comment_date">January 7, 2014, 5:16 am</span>
+				<div class="comment_text" id="comment-body-2543"><p>@simpulton Please remove slide-animation class from index.html file. Same thing is happen with me.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-2654">
+				<span class="comment_author">Chris</span>
+				<span class="comment_date">January 24, 2014, 9:12 am</span>
+				<div class="comment_text" id="comment-body-2654"><p>Good tutorial and thanks. This helped me quite a lot. I had however a hard time using this code with $routeProvider. Following Code:</p>
+<p>                    <a href="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/#" rel="nofollow">{{slide.description}}</a></p>
+<p>will reload the Controller and therefore the index state of “currentIndex” is lost when clicking on a link. It took me ages until I figured out what actually causes this issue.</p>
+<p>I have created buttons for this purpose:</p>
+<p>                {{slide.description}}</p>
+<p>This prevents the Controller from re-initializing.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-2655">
+				<span class="comment_author">Chris</span>
+				<span class="comment_date">January 24, 2014, 9:17 am</span>
+				<div class="comment_text" id="comment-body-2655"><p>Ok, swallowing HTML elements. Sorry folks. Just use buttons with ng-click. No a href.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-2781">
+				<span class="comment_author">KC</span>
+				<span class="comment_date">February 20, 2014, 12:20 pm</span>
+				<div class="comment_text" id="comment-body-2781"><p>I couldnt get the exact connection between the methods setCurrentSlideIndex() and isCurrenntSlideIndex(). When setCurrentSlideIndex()  is called in the ng-onClick why does angular call  isCurrenntSlideIndex() ? Whats the connection? Can you please elaborate?</p>
+<p>Thanks</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-2782">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">February 20, 2014, 4:56 pm</span>
+				<div class="comment_text" id="comment-body-2782"><p>Hi KC —<br>
+isCurrentSlideIndex gets called when $scope.currentIndex is modified so that the rest of the slider can update to the new index i.e. image. Essentially in this code here ng-hide=”!isCurrentSlideIndex($index)” the image is saying “Check and see if I am the current image and if not… then I need to hide”</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-2789">
+				<span class="comment_author">KC</span>
+				<span class="comment_date">February 21, 2014, 8:13 am</span>
+				<div class="comment_text" id="comment-body-2789"><p>Thanks. So basically when model  (in this case scope.currentIndex) is changed, then angular will call all the functions where that scope variable is referenced.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-2799">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">February 21, 2014, 5:32 pm</span>
+				<div class="comment_text" id="comment-body-2799"><p>Yep courtesy of the AngularJS digest cycle.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-3495">
+				<span class="comment_author">Ravin</span>
+				<span class="comment_date">March 20, 2014, 3:54 am</span>
+				<div class="comment_text" id="comment-body-3495"><p>Demo does not work. I’m using Chrome.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-3496">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">March 20, 2014, 5:40 am</span>
+				<div class="comment_text" id="comment-body-3496"><p>Posted demo works fine for me. Check the repo for the latest. I need to update the post.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-3571">
+				<span class="comment_author">Jakub</span>
+				<span class="comment_date">April 1, 2014, 3:34 pm</span>
+				<div class="comment_text" id="comment-body-3571"><p>Perhaps $scope.prevSlide  and $scope.prevSlide functions are flipped?</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-3573">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">April 1, 2014, 4:33 pm</span>
+				<div class="comment_text" id="comment-body-3573"><p>I am confused… <img draggable="false" class="emoji" alt="😀" src="./angular-imageSlider_files/1f600.png"></p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-3622">
+				<span class="comment_author">Jakub</span>
+				<span class="comment_date">April 9, 2014, 6:38 am</span>
+				<div class="comment_text" id="comment-body-3622"><p>No wonder that you are confused, sorry my bad. I wanted to say it seems that code in $scope.nextSlide and $scope.prevSlide functions are flipped. I am expecting :</p>
+<p>  $scope.prevSlide = function () {<br>
+            $scope.currentIndex = ($scope.currentIndex &gt; 0) ? –$scope.currentIndex : $scope.slides.length – 1;<br>
+        };</p>
+<p>        $scope.nextSlide = function () {<br>
+           $scope.currentIndex = ($scope.currentIndex &lt; $scope.slides.length – 1) ? ++$scope.currentIndex : 0;            </p>
+<p>        };</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-6995">
+				<span class="comment_author">Grzegorz Wegorzewski</span>
+				<span class="comment_date">May 11, 2014, 9:12 am</span>
+				<div class="comment_text" id="comment-body-6995"><p>How to add also time to move slides in time interval ?</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-7233">
+				<span class="comment_author">robert</span>
+				<span class="comment_date">May 13, 2014, 10:18 am</span>
+				<div class="comment_text" id="comment-body-7233"><p>WOW! that was amazing….! Thanks <img draggable="false" class="emoji" alt="🙂" src="./angular-imageSlider_files/1f642.png"></p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-8796">
+				<span class="comment_author">Amir Khan</span>
+				<span class="comment_date">May 26, 2014, 6:33 pm</span>
+				<div class="comment_text" id="comment-body-8796"><p>Hey Bro its a great tutorial but can you please help me out i am new to Angular JS i want to move the slider automatically but i am unable to get it , please help me out with this.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-10946">
+				<span class="comment_author">jacques lowe</span>
+				<span class="comment_date">June 12, 2014, 6:36 pm</span>
+				<div class="comment_text" id="comment-body-10946"><p>Hi,<br>
+I really these examples, they are amazing, however.<br>
+I am stuck in a newbie AngularJS question!<br>
+I have done the fork (off github), then clone cmd git and got the source local.<br>
+But when I try the “npm start”, in said directory, its always complaining about the ENENT about “package.json”<br>
+This might one obvious to most but to me its got me stuck!<br>
+Any help is greatly appreciated!</p>
+<p>Note:<br>
+-I have already done the “https://docs.angularjs.org/tutorial” with no hiccups!<br>
+-I also have the seed app, which runs too.<br>
+-I have node.js  v0.10.28!</p>
+<p>Thanks in advance,</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-10981">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">June 12, 2014, 11:35 pm</span>
+				<div class="comment_text" id="comment-body-10981"><p>That is because it is not a node project. <img draggable="false" class="emoji" alt="😀" src="./angular-imageSlider_files/1f600.png"> I recommend creating a project in WebStorm and then viewing in browser from the IDE.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-14200">
+				<span class="comment_author">Chris Hayes</span>
+				<span class="comment_date">July 20, 2014, 5:01 am</span>
+				<div class="comment_text" id="comment-body-14200"><p>little word of warning. if you are using routing then every anchor tag is going to trigger routing instead of slide show.  remove the href tags all-together.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-18499">
+				<span class="comment_author"><a href="http://google.com/" rel="external nofollow" class="url">Senthil</a></span>
+				<span class="comment_date">September 1, 2014, 7:18 am</span>
+				<div class="comment_text" id="comment-body-18499"><p>Nice..</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-19048">
+				<span class="comment_author"><a href="http://www.elyasaktaou.com/" rel="external nofollow" class="url">Elyas Aktaou</a></span>
+				<span class="comment_date">September 8, 2014, 11:11 am</span>
+				<div class="comment_text" id="comment-body-19048"><p>Thank you for literally the best angularJS slider script ever!</p>
+<p>Excepted a small problem here:</p>
+<p>$scope.prevSlide = function () {<br>
+            $scope.currentIndex = ($scope.currentIndex  0) ? –$scope.currentIndex : $scope.slides.length – 1;<br>
+        };</p>
+<p>nextSlide actually is prevSlide here <img draggable="false" class="emoji" alt="🙂" src="./angular-imageSlider_files/1f642.png"> </p>
+<p>I can see you did this:<br>
+    <a href="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/#" rel="nofollow"></a><br>
+    <a href="http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/#" rel="nofollow"></a></p>
+<p>But what for?</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-19055">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">September 8, 2014, 2:04 pm</span>
+				<div class="comment_text" id="comment-body-19055"><p>Thanks Elyas <img draggable="false" class="emoji" alt="🙂" src="./angular-imageSlider_files/1f642.png"> I may have in my haste gotten those two methods mixed up. I also used a slider off of the Apple site as my starting point and that was in there… probably not necessary. I DO accept pull requests <img draggable="false" class="emoji" alt="😀" src="./angular-imageSlider_files/1f600.png"></p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-21159">
+				<span class="comment_author">Felix</span>
+				<span class="comment_date">October 1, 2014, 9:26 pm</span>
+				<div class="comment_text" id="comment-body-21159"><p>Trying to use this for pages, can’t seem to get the index change to change the display</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-21161">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">October 1, 2014, 9:29 pm</span>
+				<div class="comment_text" id="comment-body-21161"><p>Hi Felix — can you post a plunk?</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-30136">
+				<span class="comment_author">Mewen_bzh</span>
+				<span class="comment_date">November 22, 2014, 9:49 pm</span>
+				<div class="comment_text" id="comment-body-30136"><p>I found your awesome tuto on GitHub (<a href="https://github.com/simpulton/angular-photo-slider" rel="nofollow">https://github.com/simpulton/angular-photo-slider</a>) but it was not working perfectly fine. The animation between two slides was not as smooth as yours and it was impossible to go back to the first slide when you reached the last one.</p>
+<p>I finally found why. I think that there is a small mistake in the HTML. Indeed, the line 31 was :<br>
+ “”<br>
+I changed it to :<br>
+ “”</p>
+<p>And then it is working perfectly fine and smooth just like in your demo. Is it normal?</p>
+<p>My next steps will be to adapt your slide show in order to be responsive, to add a time function in order to change the slide automatically and to find if there is a way to control the slide show with the keyboard.</p>
+<p>Best regards and thank you very much for your awesome slide show.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-36773">
+				<span class="comment_author">suresh</span>
+				<span class="comment_date">December 31, 2014, 1:13 pm</span>
+				<div class="comment_text" id="comment-body-36773"><p>dude, great work and thanks in advance ..<br>
+but animation is not working , can you please give the description for ‘slide-animation’ class..looks like it is missing in the style page</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-37268">
+				<span class="comment_author">Charles Smith</span>
+				<span class="comment_date">January 3, 2015, 9:30 pm</span>
+				<div class="comment_text" id="comment-body-37268"><p>Great tut…just implement this into my site.  Is there an ‘autoPlay: true’ setting for this slider?<br>
+Thank you.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-37294">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">January 4, 2015, 12:50 am</span>
+				<div class="comment_text" id="comment-body-37294"><p>Thanks! The answer to that mystery is here <a href="http://onehungrymind.com/build-a-full-page-angularjs-slideshow/" title="Build a Full Page AngularJS Slideshow Plus Magic Tricks!" rel="nofollow"></a></p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44303">
+				<span class="comment_author"><a href="http://www.gtz.com/" rel="external nofollow" class="url">john tomaselli</a></span>
+				<span class="comment_date">February 22, 2015, 4:01 pm</span>
+				<div class="comment_text" id="comment-body-44303"><p>Demo doesn’t seem to work. Only 1 photo displays with no controls using mac/chrome.<br>
+John</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-44371">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">February 22, 2015, 11:13 pm</span>
+				<div class="comment_text" id="comment-body-44371"><p>Hi John — are you sure? It works fine for me. The controls are a little hard to see on the first slide.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44510">
+				<span class="comment_author">Sid</span>
+				<span class="comment_date">February 23, 2015, 7:58 pm</span>
+				<div class="comment_text" id="comment-body-44510"><p>How would you make it automatic. Sliding automatic including the buttons</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-46284">
+				<span class="comment_author">michael</span>
+				<span class="comment_date">March 9, 2015, 12:30 am</span>
+				<div class="comment_text" id="comment-body-46284"><p>Very nice, I’m a noob and its helped give a nice practical example to get me started.</p>
+<p>Now for the kink: what if your photos are not all of the same size? I’ve tried it and the bounding box sizes for the first image and then remains the same for all others. How do you get it to resize for each image?</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-46289">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">March 9, 2015, 1:01 am</span>
+				<div class="comment_text" id="comment-body-46289"><p>I would do it with a directive <img draggable="false" class="emoji" alt="😀" src="./angular-imageSlider_files/1f600.png"> Grab the element parent dimensions and then resize proportionately. Ping me back if this doesn’t make sense.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-47236">
+				<span class="comment_author">michael</span>
+				<span class="comment_date">March 14, 2015, 10:09 pm</span>
+				<div class="comment_text" id="comment-body-47236"><p>I think what is happening is that my directive to resize the “container slider” based on the size of the currently active image breaks ng-repeat, or, at least, makes it inoperative. This means that the directive will show the container, but none of the images nor the nav (both relying on ng-repeat). So what do I have to do to my directive, so that ng-repeat works again?</p>
+<p>I suppose if the code I posted has any value, you can add it into the slider and watch it break.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-56915">
+				<span class="comment_author"><a href="http://www.vitinfotech.com/" rel="external nofollow" class="url">sujit</a></span>
+				<span class="comment_date">May 13, 2015, 1:59 pm</span>
+				<div class="comment_text" id="comment-body-56915"><p>Good example</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-59183">
+				<span class="comment_author"><a href="http://www.mgraphics.com.pl/" rel="external nofollow" class="url">MGraphics</a></span>
+				<span class="comment_date">June 3, 2015, 8:56 pm</span>
+				<div class="comment_text" id="comment-body-59183"><p>Great tutorial, but I think that you schould build a left / right slide.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-59190">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">simpulton</a></span>
+				<span class="comment_date">June 3, 2015, 9:43 pm</span>
+				<div class="comment_text" id="comment-body-59190"><p>My friend… come back for part two <img draggable="false" class="emoji" alt="😀" src="./angular-imageSlider_files/1f600.png"> <a href="http://onehungrymind.com/build-sweet-angularjs-photo-slider-pt-2-ngtouch/" target="_blank" rel="nofollow">Build a Sweet AngularJS Photo Slider Pt 2 with ngTouch</a></p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-64115">
+				<span class="comment_author">Ram</span>
+				<span class="comment_date">August 12, 2015, 9:14 am</span>
+				<div class="comment_text" id="comment-body-64115"><p>Nice 1……<br>
+Very helpful for the beginners…</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-69704">
+				<span class="comment_author">Mauricio</span>
+				<span class="comment_date">January 4, 2016, 5:39 pm</span>
+				<div class="comment_text" id="comment-body-69704"><p>Awesome tutorial!, Thank you very much. <img draggable="false" class="emoji" alt="🙂" src="./angular-imageSlider_files/1f642.png"></p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-77468">
+				<span class="comment_author">Ram</span>
+				<span class="comment_date">April 26, 2016, 12:02 pm</span>
+				<div class="comment_text" id="comment-body-77468"><p>HI, This is really amazing tutorial. Thanks a ton.<br>
+The github code is not doing animation like demo is doing. I did replace animation part in github code (app.js file) as follow…<br>
+.animation(‘.slide-animation’, function () {<br>
+        return {<br>
+            addClass: function (element, className, done) {<br>
+                if (className == ‘ng-hide’) {<br>
+                    TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });<br>
+                }<br>
+                else {<br>
+                    done();<br>
+                }<br>
+            },<br>
+            removeClass: function (element, className, done) {<br>
+                if (className == ‘ng-hide’) {<br>
+                    element.removeClass(‘ng-hide’);<br>
+           TweenMax.set(element, { left: element.parent().width() });<br>
+                TweenMax.to(element, 0.5, {left: 0, onComplete: done });<br>
+            }<br>
+            else {<br>
+                done();<br>
+            }<br>
+        }<br>
+    };<br>
+});</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-79106">
+				<span class="comment_author"><a href="http://ng-nj.com/" rel="external nofollow" class="url">Jimponada</a></span>
+				<span class="comment_date">June 2, 2016, 8:29 pm</span>
+				<div class="comment_text" id="comment-body-79106"><p>Ah yes, the regal Sir TweenMax of Greensock. I do know that fellow and think quite highly of him.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-79715">
+				<span class="comment_author">Chris J</span>
+				<span class="comment_date">June 16, 2016, 1:59 am</span>
+				<div class="comment_text" id="comment-body-79715"><p>Hello. This a great slider!!! I have run into a problem and I am sure I am just doing something incorrectly, as I am new to Angular. I am using ngRoute to inject html pages into my index.html page. If I view the page that has the slider by itself (slider.html) it looks perfect. If I view the index.html page that is injecting the slider into the page (slider.html), the slider does not show. Everything else on slider.html shows but not the slider itself. Any ideas what I may be doing wrong? The site is not live so I do not have a link to show.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-79742">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">Lukas Ruebbelke</a></span>
+				<span class="comment_date">June 16, 2016, 1:55 pm</span>
+				<div class="comment_text" id="comment-body-79742"><p>@Chris Does any of your other routes work? I suspect there is a problem with how routing is set up.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-81300">
+				<span class="comment_author"><a href="https://github.com/NagBharadwaja/" rel="external nofollow" class="url">Naga</a></span>
+				<span class="comment_date">August 27, 2016, 5:19 pm</span>
+				<div class="comment_text" id="comment-body-81300"><p>Hi.. I currently finished the fourth step, but the application so far is not allowing me to navigate between images as it should when I click on the dots or arrows. Any kind of help is highly appreciated.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-81301">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">Lukas Ruebbelke</a></span>
+				<span class="comment_date">August 27, 2016, 6:00 pm</span>
+				<div class="comment_text" id="comment-body-81301"><p>Hi Naga – can you put your code in a plunk so I can see it? Are you throwing an error?</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-81303">
+				<span class="comment_author">Naga</span>
+				<span class="comment_date">August 27, 2016, 6:16 pm</span>
+				<div class="comment_text" id="comment-body-81303"><p>I couldn’t paste the HTML code in the comment box… Can you tell me how to do it?</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-81308">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">Lukas Ruebbelke</a></span>
+				<span class="comment_date">August 27, 2016, 11:21 pm</span>
+				<div class="comment_text" id="comment-body-81308"><p>Please put your code in a plunk at <a href="http://plnkr.co/" rel="nofollow">http://plnkr.co/</a> or post it on Github. Comment threads are a really poor place to troubleshoot code.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-81311">
+				<span class="comment_author">Naga</span>
+				<span class="comment_date">August 27, 2016, 11:59 pm</span>
+				<div class="comment_text" id="comment-body-81311"><p>Here is my code I used so far<br>
+<a href="http://plnkr.co/edit/EkzrF9MjVZ9YQFDRKa03?p=preview" rel="nofollow">http://plnkr.co/edit/EkzrF9MjVZ9YQFDRKa03?p=preview</a></p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-81313">
+				<span class="comment_author"><a href="http://www.onehungrymind.com/" rel="external nofollow" class="url">Lukas Ruebbelke</a></span>
+				<span class="comment_date">August 28, 2016, 12:17 am</span>
+				<div class="comment_text" id="comment-body-81313"><p>Here is a working example… <a href="http://plnkr.co/edit/u9kzj7zWTzcm0r0rCRnW?p=preview" rel="nofollow">http://plnkr.co/edit/u9kzj7zWTzcm0r0rCRnW?p=preview</a></p>
+<ol>
+<li>I updated the links in your plunk so they would work.</li>
+<li>
+<p>Your next and previous code was not correct.</p>
+</li>
+</ol>
+<p>This should get you unstuck. You just need to add in the animations. As a troubleshooting mechanism, I recommend referencing the final code in the repository to see where your code differs and working from there.</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment even thread-even depth-1" id="comment-81314">
+				<span class="comment_author"><a href="https://github.com/NagBharadwaja/" rel="external nofollow" class="url">Naga</a></span>
+				<span class="comment_date">August 28, 2016, 1:21 am</span>
+				<div class="comment_text" id="comment-body-81314"><p>That helps. Thank you so much for your help @Lukas</p>
+				</div>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-81315">
+				<span class="comment_author"><a href="https://github.com/NagBharadwaja/" rel="external nofollow" class="url">Naga</a></span>
+				<span class="comment_date">August 28, 2016, 1:26 am</span>
+				<div class="comment_text" id="comment-body-81315"><p>Just to let everyone know the problem was with the previous slide code and also it seems with the angularJS library that I used. When I used the one used in this article, it worked.</p>
+				</div>
+</li><!-- #comment-## -->
+		</ul>
+	</div>
+</div>
+<div id="footer" class="full_width">
+	<div class="inner">
+		<div class="profile-icons">
+			<a class="profile-icon fa fa-twitter" href="https://twitter.com/simpulton"></a>
+			<a class="profile-icon fa fa-google-plus" href="https://plus.google.com/+LukasRuebbelke/posts"></a>
+			<a class="profile-icon fa fa-linkedin" href="https://www.linkedin.com/profile/view?id=14238008"></a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">(function() {function addEventListener(element,event,handler) {
+	if(element.addEventListener) {
+		element.addEventListener(event,handler, false);
+	} else if(element.attachEvent){
+		element.attachEvent('on'+event,handler);
+	}
+}function maybePrefixUrlField() {
+	if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if( urlFields && urlFields.length > 0 ) {
+	for( var j=0; j < urlFields.length; j++ ) {
+		addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+	}
+}/* test if browser supports date fields */
+var testInput = document.createElement('input');
+testInput.setAttribute('type', 'date');
+if( testInput.type !== 'date') {
+
+	/* add placeholder & pattern to all date fields */
+	var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+	for(var i=0; i<dateFields.length; i++) {
+		if(!dateFields[i].placeholder) {
+			dateFields[i].placeholder = 'YYYY-MM-DD';
+		}
+		if(!dateFields[i].pattern) {
+			dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+		}
+	}
+}
+
+})();</script><script type="text/javascript" src="./angular-imageSlider_files/form.js"></script>
+<script type="text/javascript" src="./angular-imageSlider_files/comment-reply.min.js"></script>
+<script type="text/javascript" src="./angular-imageSlider_files/photon.js"></script>
+<script type="text/javascript" src="./angular-imageSlider_files/devicepx-jetpack.js"></script>
+<script type="text/javascript" src="./angular-imageSlider_files/wp-embed.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var mc4wp_forms_config = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="./angular-imageSlider_files/forms-api.min.js"></script>
+<!--[if lte IE 9]>
+<script type='text/javascript' src='http://onehungrymind.com/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.3'></script>
+<![endif]-->
+<script type="text/javascript" src="./angular-imageSlider_files/e-201635.js" async="" defer=""></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.2.2',blog:'92777630',post:'747',tz:'0',srv:'onehungrymind.com'} ]);
+	_stq.push([ 'clickTrackerInit', '92777630', '747' ]);
+</script>
+<script type="text/javascript">(function(d,g){d[g]||(d[g]=function(g){return this.querySelectorAll("."+g)},Element.prototype[g]=d[g])})(document,"getElementsByClassName");(function(){var classes = document.getElementsByClassName('menu_control');for (i = 0; i < classes.length; i++) {classes[i].onclick = function() {var menu = this.nextElementSibling;if (/show_menu/.test(menu.className))menu.className = menu.className.replace('show_menu', '').trim();else menu.className += ' show_menu';if (/menu_control_triggered/.test(this.className))this.className = this.className.replace('menu_control_triggered', '').trim();else this.className += ' menu_control_triggered';};}})();</script>
+<noscript>&lt;style type="text/css" scoped&gt;.menu-main { display: block; }&lt;/style&gt;</noscript>
+<!-- Facebook Pixel Code - Designer Audience -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '933148050059146');
+fbq('track', "PageView");</script>
+<noscript>&lt;img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=933148050059146&amp;ev=PageView&amp;noscript=1"
+/&gt;</noscript>
+<!-- End Facebook Pixel Code -->
+
+</div><img src="./angular-imageSlider_files/g.gif" alt=":)" width="6" height="5" id="wpstats"></body></html>
