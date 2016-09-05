@@ -3,7 +3,20 @@
 <div class="container" ng-controller="indexCtrl">
 	<div class="row">
 		<div class="mainbanner">
-			<img ng-repeat="slide in slides" class="slide" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+			<img ng-repeat="slide in slides" class="slide slide-animation" 
+			ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+			<button class="arrow prev" ng-click="nextSlide()"></button>
+			<button class="arrow next" ng-click="prevSlide()"></button>
+
+			<nav class="nav">
+				<div class="wrapper">
+					<ul class="dots">
+						<li class="dot" ng-repeat="slide in slides">
+							<button ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);">{{slide.description}}</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</div>
 	</div>
 
