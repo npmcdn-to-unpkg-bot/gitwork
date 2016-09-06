@@ -14,7 +14,45 @@ var mysqlClient = mysql.createConnection({
 	password: '870915',
 	database : 'nodetest'
 });
+var passport = require('passport');
+var flash = require('connect-flash');
+var async = require('async');
 
+app.use(flash());
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+passport.serializeUser(function(user, done){
+	done(null, user);
+});
+passport.deserializeUser(function(user, done){
+	mysqlClient.query('select * from user where id = ?', [user.id], function(error, result){
+		done(err, user);
+	});
+
+});
+
+var LocalStrategy = require('passport-local').Strategy;
+passport.use('local-login',
+	new LocalStrategy({
+		usernameField : 'userID',
+		passwordField : 'password',
+		passReqToCallback : true
+	},
+	function(req, userID, password, done){
+		mysqlClient.query('select * from user where userID = ? and password = ?', [userID, password], 
+			function(error, result){
+				if(error){
+					return done(error);
+				}else if(result.length == 0){
+					return done(error);
+				}else{
+					return done(null, result);
+				}
+			})
+	})
+);
 
 //view 파일 경로 설정
 app.set('views', __dirname + '/views');
@@ -37,7 +75,8 @@ app.use(session({
 
 // route 파일 설정
 var main = require('./router/main')(app, mysqlClient);
-var login = require('./router/login')(app, mysqlClient);
+var login = require('./router/login')(app, mysqlClient, passport);
+var userPage = require('./router/userPage')(app, mysqlClient, passport);
 
 app.listen(3000, function(){
 	console.log('listening on port 3000!');
