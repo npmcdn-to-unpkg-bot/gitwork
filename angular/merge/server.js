@@ -18,6 +18,10 @@ var passport = require('passport');
 var flash = require('connect-flash');
 var async = require('async');
 
+// encrypt 
+var bcrypt = require('bcrypt-nodejs');
+var salt = bcrypt.genSaltSync(33);
+
 app.use(flash());
 
 app.use(passport.initialize());
@@ -41,8 +45,9 @@ passport.use('local-login',
 		passReqToCallback : true
 	},
 	function(req, userID, password, done){
-		mysqlClient.query('select * from user where userID = ? and password = ?', [userID, password], 
+		mysqlClient.query('select * from user where userID = ? and password = ?', [userID, bcrypt.hashSync(password, salt)], 
 			function(error, result){
+				console.log(bcrypt.hashSync(password, salt));
 				if(error){
 					return done(error);
 				}else if(result.length == 0){
@@ -75,7 +80,7 @@ app.use(session({
 
 // route 파일 설정
 var main = require('./router/main')(app, mysqlClient);
-var login = require('./router/login')(app, mysqlClient, passport);
+var login = require('./router/login')(app, mysqlClient, passport, bcrypt, salt);
 var userPage = require('./router/userPage')(app, mysqlClient, passport);
 
 app.listen(3000, function(){

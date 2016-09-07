@@ -1,4 +1,4 @@
-module.exports = function(app, mysqlClient, passport)
+module.exports = function(app, mysqlClient, passport, bcrypt, salt)
 {
 	app.get('/login', function(req,res){
 		res.render('login/login.html');
@@ -23,7 +23,7 @@ module.exports = function(app, mysqlClient, passport)
 	});
 	app.post('/sign-up', function(req, res){
 		mysqlClient.query('insert into user(userID, password, email) values(?,?,?)', 
-			[req.body.userID, req.body.password, req.body.email],
+			[req.body.userID, bcrypt.hashSync(req.body.password, salt), req.body.email],
 			function(error, result){
 				if(error){
 					console.log('insert.error : ', error.message);
