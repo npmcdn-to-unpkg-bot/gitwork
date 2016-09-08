@@ -3,7 +3,10 @@
 <head>
 	<% include ./header.html %>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title></title>
+	<script>
+	console.log("userID is : " + "<%= session.userID%>");
+	</script>
 </head>
 <body ng-view>
 

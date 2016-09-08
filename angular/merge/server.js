@@ -45,15 +45,19 @@ passport.use('local-login',
 		passReqToCallback : true
 	},
 	function(req, userID, password, done){
-		mysqlClient.query('select * from user where userID = ? and password = ?', [userID, bcrypt.hashSync(password, salt)], 
+		mysqlClient.query('select * from user where userID = ?', [userID], 
 			function(error, result){
-				console.log(bcrypt.hashSync(password, salt));
+				var comp = bcrypt.compareSync(password, result[0].password);
 				if(error){
 					return done(error);
 				}else if(result.length == 0){
 					return done(error);
-				}else{
+				}else if(comp){
+					req.session.userID = result[0].userID;
+					req.session.email = result[0].email;
 					return done(null, result);
+				}else{
+					return done(error);
 				}
 			})
 	})
@@ -81,7 +85,7 @@ app.use(session({
 // route 파일 설정
 var main = require('./router/main')(app, mysqlClient);
 var login = require('./router/login')(app, mysqlClient, passport, bcrypt, salt);
-var userPage = require('./router/userPage')(app, mysqlClient, passport);
+var userPage = require('./router/userPage')(app, mysqlClient, passport, session);
 
 app.listen(3000, function(){
 	console.log('listening on port 3000!');
