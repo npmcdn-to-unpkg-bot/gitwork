@@ -1,14 +1,65 @@
-.test{
-	width:100px;
-	height: 200px;
+.top-font{
+	color: #fff;
+	font-size: 30px;
+	float: left;
+}
+.top-padding{
+	padding-top: 10px;
+	padding-left: 15px;	
+}
+.topMenu{
+	width: 100%;
+	height: 60px;
+	background-color: #000000;
+	.username{
+		.top-padding;
+		.top-font;
+	}
+	.menuWrapper{
+		overflow: hidden;
+		float: left;
+		margin-left: 50px;
+		.menu{
+			float: left;
+			.top-padding;
+			.top-font;
+		}
+	}
 }
 
-.user1{
-	position:relative;
-	.test;
+.index_wrapper{
+	width: 50%;
+	height: 500px;
+}
+.index_table{
+	margin-top: 30px;
+	width: 500px;
+	position: relative;
+	left: 50%;
+	margin-left: -250px;
+	font-size: 15px;
+	text-align: center;
+}
+.admin_wrapper{
+	.index_wrapper;
+	float: left;
+	
+	table{
+		.index_table;	
+	}
+}
+.guest_wrapper{
+	.index_wrapper;
+	float: right;
+	
+	table{
+		.index_table;
+	}
 }
 
-.user2{
-	position:absolute;
-	.test;
+.notification_wrapper{
+	width: 100%;
+	height: 500px;
+	clear: both;
+	background-color: #BEDBFF;
 }

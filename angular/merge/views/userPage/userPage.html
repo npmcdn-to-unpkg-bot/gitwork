@@ -5,10 +5,32 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<script>
-	console.log("userID is : " + "<%= session.userID%>");
+		window.currentUser = "<%= session.userID %>";
+		window.userEmail = "<%= session.email %>";
 	</script>
 </head>
-<body ng-view>
+<body>
+	<div class="container">
+		<div class="topMenu">
+			<div class="username">
+				<%= session.userID %> Page
+			</div>
+			<div class="menuWrapper">
+				<div class="menu">
+					Menu1
+				</div>
+				<div class="menu">
+					Menu2
+				</div>
+				<div class="menu">
+					Menu3
+				</div>
+			</div>
 
+		</div>
+	</div>
+	<div ng-view>
+		
+	</div>
 </body>
 </html>
