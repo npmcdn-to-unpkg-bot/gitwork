@@ -7,18 +7,24 @@ angular.module('userPage.index', ['ngRoute'])
 		controller: 'indexCtrl'
 	});
 }])
-.controller('indexCtrl', function($scope, Autentication){
-	$scope.userID = Autentication.user;
-	$scope.email =  Autentication.email;
+.controller('indexCtrl', function($scope, user){
+	user.getuser(function(data){
+		$scope.loginUser = data[0].userID;
+	});
 })
-.factory('Autentication', [
-	function(){
-		this.user = window.currentUser;
-		this.email = window.userEmail;
-
-		return{
-			user : this.user,
-			email : this.email
-		};
+.factory('user',function($http){
+	return{
+		getuser: function(callback){
+			$http({
+				method: 'get',
+				url:'/getuser'
+			}).success(function(data, status, headers, config){
+				console.log("success");
+				console.dir(data);
+				callback(data);
+			}).error(function(data, status, headers, config){
+				console.log("error");
+			});
+		}
 	}
-]);
+});

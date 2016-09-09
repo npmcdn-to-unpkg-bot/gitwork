@@ -12,4 +12,13 @@ create table user(
 	email varchar(100) not null
 );
 
+create table study(
+	id int not null auto_increment primary key,
+	admin int not null,
+	create_date DATE,
+	title varchar(200),
+	description TEXT,
+);
+
 insert into user(userID, password, email) values('jumpegg', '870915', 'jumpegg@naver.com');
+insert into study(admin, create_date) values(1, now());
